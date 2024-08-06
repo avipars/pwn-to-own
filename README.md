@@ -44,6 +44,8 @@ make sure that each element in the array ends with /archive/master.zip or someth
 
 You can make your own repo with plugins, or just copy a plugin you like directly to this directory /etc/pwnagotchi/custom_plugins just as well (and then enable it) 
 
+/usr/local/share/pwnagotchi/available-plugins # plugins that are available to be installed - if you used a repo and did update... those plugins would appear here
+
 #### Useful commands: 
 
 sudo pwnagotchi plugins list #shows available plugins
