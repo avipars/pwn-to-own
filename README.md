@@ -46,6 +46,7 @@ You can make your own repo with plugins, or just copy a plugin you like directly
 
 /usr/local/share/pwnagotchi/available-plugins # plugins that are available to be installed - if you used a repo and did update... those plugins would appear here
 
+
 #### Useful commands: 
 
 sudo pwnagotchi plugins list #shows available plugins
