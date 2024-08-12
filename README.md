@@ -46,6 +46,16 @@ You can make your own repo with plugins, or just copy a plugin you like directly
 
 /usr/local/share/pwnagotchi/available-plugins # plugins that are available to be installed - if you used a repo and did update... those plugins would appear here
 
+after a change, you can run 
+
+systemctl restart pwnagotchi
+
+and then see the status with this 
+
+sudo systemctl status pwnagotchi
+
+
+
 
 #### Useful commands: 
 
