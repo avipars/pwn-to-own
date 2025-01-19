@@ -40,7 +40,7 @@ Make sure to allow EVERYONE to write ot that folder
     hcxpcapngtool *.pcap -o candidates.hc22000 -E essid.wordlist
     ```
 
-* If you are new to hashcat on windows, consider creating a ```hashcat.bat``` file 
+* If you are new to hashcat on windows, consider creating a ```hashcat.CF``` file 
 
     ```bash
     @echo off
@@ -50,7 +50,7 @@ Make sure to allow EVERYONE to write ot that folder
     popd
     ```
 
-    Now add ```C:\Program Files\hashcat``` to your PATH, and you can call ```hashcat.bat`` from anywhere to get it running
+    Now add ```C:\Program Files\hashcat``` to your PATH, and you can call ```hashcat.bat``` from anywhere to get it running
 
 * Run this on a computer with mergecap installed (comes with wireshark)
 
