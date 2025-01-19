@@ -40,7 +40,7 @@ Make sure to allow EVERYONE to write ot that folder
     hcxpcapngtool *.pcap -o candidates.hc22000 -E essid.wordlist
     ```
 
-* If you are new to hashcat on windows, consider creating a ```hashcat.CF``` file 
+* If you are new to hashcat on windows, consider creating a ```hashcat.bat``` file 
 
     ```bash
     @echo off
@@ -58,7 +58,7 @@ Make sure to allow EVERYONE to write ot that folder
     mergecap -a -V -w allpcap.pcap C:\temp\pcaps\*.pcap
     ```
 
-* Remove your old PCAPs
+* Remove your old PCAPs (on the pi)
 
     ```bash
     sudo rm /home/pi/handshakes/*
@@ -92,6 +92,7 @@ Make sure to allow EVERYONE to write ot that folder
     ```bash
     sudo pwnagotchi plugins list
     ```
+    
 * Update all plugins
 
     ```bash

@@ -15,6 +15,3 @@ alias phand='cd  /home/pi/handshakes/'
 #from others
 alias pwnlog='tail -f -n300 /var/log/pwn*.log | sed --unbuffered "s/,[[:digit:]]\{3\}\]//g" | cut -d " " -f 2-'
 alias pwnver='python3 -c "import pwnagotchi as p; print(p.__version__)"'
-
-
-

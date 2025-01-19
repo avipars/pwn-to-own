@@ -63,3 +63,4 @@ For example:
 ```main.plugins.bt-tether.devices.blah.enabled = true```
 
 is valid, but certainly less descriptive. Of course, the 'blah' keyword wouldneed to remain consistent across of all the bt-tether settings applied to that device. 
+
