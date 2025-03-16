@@ -2,6 +2,10 @@
 
 Code snippets are [here](SNIPPETS.md)
 
+How to use an usb wifi dongle [here](EXTERNALWIFI.md)
+
+Have fun with stats [here](STATS.md)
+
 ### Plugins
 
 #### Directories
@@ -29,6 +33,8 @@ You can make your own repo with plugins, or just copy a plugin you like directly
 
 
 #### Bluetooth pairing
+
+##### For older builds of the pwnagotchi only 
 
 The 4th section of this [guide](https://github.com/Xyl0se/Pwnagotchi-new-guerilla-guide#42-pair-pwnagotchi-with-phone-important
 ) is perfect and still works besides for paired-devices on my Pi zero 2w. 
@@ -64,3 +70,6 @@ For example:
 
 is valid, but certainly less descriptive. Of course, the 'blah' keyword wouldneed to remain consistent across of all the bt-tether settings applied to that device. 
 
+##### For more recent builds
+
+Refer to this [guide](https://pwnagotchi.org/customization/bt-tethering/index.html)

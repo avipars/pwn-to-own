@@ -1,4 +1,4 @@
-# Script to upload pcap files to wpa-sec from your desktop computer
+# Script to bulk upload pcap files to wpa-sec from your desktop computer
 import os
 import requests
 import time 
