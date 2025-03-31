@@ -1,6 +1,6 @@
 # Useful snippets
 
-Make sure to understand before running as well as chanign usernames, directories where relevant
+Make sure to understand before running as well as changing usernames, directories where relevant
 
 ### Backup
 
@@ -8,6 +8,8 @@ Make sure to understand before running as well as chanign usernames, directories
 
     ```sudo tar -czvf pwny-backup.tar.gz /root/brain.json /root/handshakes/ /root/peers/ /etc/pwnagotchi/ /usr/local/share/pwnagotchi/custom-plugins/```
 
+    if you moved your handshakes file to ```/home/pi/handshakes/```, change it accordingly. Additionally, if you are on Jay's new images without AI, you can remove ```/root/brain.json``` from the command above
+  
 * And to pull the new file (from pi to windows):
 
     ```scp pi@10.0.0.2:/home/pi/pwny-backup.tar.gz C:\temp``` 
