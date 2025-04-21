@@ -8,10 +8,11 @@ alias pconf='/etc/pwnagotchi/config.toml'
 alias nconf='sudo nano /etc/pwnagotchi/config.toml'
 alias papply='systemctl restart pwnagotchi'
 alias pstat='sudo systemctl status pwnagotchi'
-alias pstat='cd /var/tmp/pwnagotchi/sessions/'
+alias psess='cd /var/tmp/pwnagotchi/sessions/'
 alias phand='cd  /home/pi/handshakes/'
 
 
+
 #from others
-alias pwnlog='tail -f -n300 /var/log/pwn*.log | sed --unbuffered "s/,[[:digit:]]\{3\}\]//g" | cut -d " " -f 2-'
+alias pwnlog='tail -f -n300 /var/log/pwn*.log | sed --unbuffered "s/,[[:digit:]]\{3\}\]//g" | cut -d " " -f 2-' #this is already included in some pwnagotchi versions
 alias pwnver='python3 -c "import pwnagotchi as p; print(p.__version__)"'
