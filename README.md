@@ -1,4 +1,4 @@
-# Tips and tricks for pwnagotchi (pi0w and 2.8.9 Jayofelony's build)
+# Tips and tricks for pwnagotchi (pi0w, pi02w, and Jayofelony's build)
 
 Code snippets are [here](SNIPPETS.md)
 
@@ -34,7 +34,7 @@ You can make your own repo with plugins, or just copy a plugin you like directly
 
 #### Bluetooth pairing
 
-##### For older builds of the pwnagotchi only 
+##### For older builds of the pwnagotchi only (2.8.9 etc)
 
 The 4th section of this [guide](https://github.com/Xyl0se/Pwnagotchi-new-guerilla-guide#42-pair-pwnagotchi-with-phone-important
 ) is perfect and still works besides for paired-devices on my Pi zero 2w. 
