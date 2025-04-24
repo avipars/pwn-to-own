@@ -81,6 +81,11 @@ Make sure to allow EVERYONE to write ot that folder
     systemctl restart pwnagotchi
     ```
 
+    or via 
+     ```bash
+    pwnkill
+    ```
+
 * Check service status
 
     ```bash
@@ -156,7 +161,7 @@ Scripts/Code relating to using this plugin
     sudo cat /root/.wpa_sec_uploads
     ```
 
-* Remove those recorded files (locally only)
+* Remove those recorded files (locally only,)
 
     ```bash
     sudo rm /root/.wpa_sec_uploads
