@@ -2,7 +2,7 @@
 
 Code snippets are [here](SNIPPETS.md)
 
-How to use an usb wifi dongle [here](EXTERNALWIFI.md)
+How to use a usb wifi dongle [here](EXTERNALWIFI.md)
 
 Have fun with stats [here](STATS.md)
 
