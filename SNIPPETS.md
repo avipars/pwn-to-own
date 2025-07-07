@@ -29,6 +29,13 @@ If they are in ```/root/handshakes/```, you can modifyy the scripts accordingly.
     sudo zip -r pcaps.zip /home/pi/handshakes
     ```
 
+* (Optional) Grab the file metadata as well (last modified, permissions, etc.)
+
+    ```bash
+    cd /home/pi/handshakes
+    ls -la > metadata.txt
+    ```
+  
 * Send the file to another computer (run this command from the recieving computer terminal)
 Make sure to allow EVERYONE to write ot that folder 
 
@@ -36,6 +43,17 @@ Make sure to allow EVERYONE to write ot that folder
     scp pi@10.0.0.2:/home/pi/handshakes/pcaps.zip  C:\temp
     ```
 
+* Alternatively, you can use file globbing and scp to grab all ```.pcaps``` or all files in a given directory
+
+    All files
+    ```bash
+    scp pi@10.0.0.2:/home/pi/handshakes/*  C:\temp 
+    ```
+    
+    pcap only
+    ```bash
+    scp pi@10.0.0.2:/home/pi/handshakes/*.pcap  C:\temp 
+    ```
 * With Linux or WSL, run this to convert pcaps to a crackable format (after installing hcxtools)
 
     ```bash
