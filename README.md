@@ -1,12 +1,26 @@
 # Tips and tricks for pwnagotchi (pi0w, pi02w, and Jayofelony's build)
 
+These files are for educational, research, and personal experimentation only. Use them responsibly with your own devices. I am not liable for any unethical or harmful use.
+
 Code snippets are [here](SNIPPETS.md)
 
-How to use a usb wifi dongle [here](EXTERNALWIFI.md)
+How to use an external usb wifi dongle [here](EXTERNALWIFI.md)
 
 Have fun with stats [here](STATS.md)
 
+### 3D Printed Case
+
+Case I use with the WaveShare 2.13" eink screen (v4) with my Pi Zero 2W 
+
+[Printables link](https://www.printables.com/model/1375098-pwnagotchi-case-with-keyring-ventilation-holes-and)
+<!-- [MakerWorld link](https://www.makerworld.com/3d-printable-models/pwnagotchi-case-for-waveshare-213-eink-screen-v4) -->
+
+Plase download, like, post your make of the design and provide feedback if you like it!
+
+
 ### Plugins
+
+Here are some [plugins](https://github.com/unitMeasure/pwn-plugins) that I developed myself 
 
 #### Directories
 
