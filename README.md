@@ -10,10 +10,15 @@ Have fun with stats [here](STATS.md)
 
 ### 3D Printed Case
 
-Case I use with the WaveShare 2.13" eink screen (v4) with my Pi Zero 2W 
+Case I use with the WaveShare 2.13" eIink HAT (v4) with my Pi Zero 2W 
 
-[Printables link](https://www.printables.com/model/1375098-pwnagotchi-case-with-keyring-ventilation-holes-and)
-<!-- [MakerWorld link](https://www.makerworld.com/3d-printable-models/pwnagotchi-case-for-waveshare-213-eink-screen-v4) -->
+[![Case Tutorial](https://img.youtube.com/vi/tx3ARAzF2n8/0.jpg)](https://youtu.be/tx3ARAzF2n8)
+
+STL Files for the case are available on:
+
+[Printables](https://www.printables.com/model/1375098-pwnagotchi-case-with-keyring-ventilation-holes-and)
+
+[MakerWorld](https://makerworld.com/en/models/1671610-epic-pwnagotchi-case-for-pizero-waveshare-v4-eink)
 
 Plase download, like, post your make of the design and provide feedback if you like it!
 
