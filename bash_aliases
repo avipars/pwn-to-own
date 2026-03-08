@@ -2,6 +2,7 @@
 
 # Avi Alias
 alias pupdate='sudo pwnagotchi plugins update'
+alias pupgrade='sudo pwnagotchi plugins upgrade'
 alias plist='sudo pwnagotchi plugins list'
 alias pplug='ls /usr/local/share/pwnagotchi/available-plugins'
 alias pconf='cat /etc/pwnagotchi/config.toml'
@@ -18,3 +19,5 @@ alias rest='sudo systemctl restart pwnagotchi'
 alias pedit='nano ~/.bash_aliases'
 alias pview='cat ~/.bash_aliases'
 alias aaply='source ~/.bash_aliases'
+alias pclear='sudo pwnagotchi --clear'
+alias pfunc='nano .bashrc'

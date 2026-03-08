@@ -117,11 +117,39 @@ Make sure to allow EVERYONE to write ot that folder
     ```bash
     sudo pwnagotchi plugins list
     ```
+
+    or a shortcut if you added via bash_aliases
+
+    ```bash
+    plist
+    ```
     
-* Update all plugins
+* Upgrade plugin(s)
+
+    ```bash
+    sudo pwnagotchi plugins upgrade
+    ```
+
+    without an argument, it will search for new versions of all your plugins and try to upgrade them all [source code](https://github.com/jayofelony/pwnagotchi/blob/6808063e9b46d3b6e3d7c0e26cb94b9b752bfddb/pwnagotchi/plugins/cmd.py#L16). You can add a regex filter as the argument to only update plugins wit names matching your filter
+
+
+    or a shortcut if you added via bash_aliases (with no arguments)
+
+    ```bash
+    pupgrade
+    ```
+
+
+* Update plugin database
 
     ```bash
     sudo pwnagotchi plugins update
+    ```
+
+    or a shortcut if you added via bash_aliases
+
+    ```bash
+    pupdate 
     ```
 
 * Install plugin x (change x to whatever plugin name you want)
@@ -130,10 +158,35 @@ Make sure to allow EVERYONE to write ot that folder
     sudo pwnagotchi plugins install x
     ```
 
+    or a shortcut if you added via bashrc
+
+    ```bash
+    pinstall x 
+    ```
+
+    and you can even install multiple plugins in one go via the shortcut
+
+    ```bash
+    pinstall x y 
+    ```
+
+
 * Uninstall plugin x
 
     ```bash
     sudo pwnagotchi plugins uninstall x
+    ```
+
+    or a shortcut if you added via bashrc
+
+    ```bash
+    puninstall x 
+    ```
+
+    and you can even uninstall multiple plugins in one go via the shortcut
+
+    ```bash
+    puninstall x y 
     ```
 
 * Disable plugin x
@@ -142,12 +195,43 @@ Make sure to allow EVERYONE to write ot that folder
     sudo pwnagotchi plugins disable x
     ```
 
+    or a shortcut if you added via bashrc
+
+    ```bash
+    pdisable x 
+    ```
+
+    and you can even disable multiple plugins in one go via the shortcut
+
+    ```bash
+    pdisable x y 
+    ```
+
 * Enable plugin x
 
     ```bash
     sudo pwnagotchi plugins enable x
     ```
 
+    or a shortcut if you added via bashrc
+
+    ```bash
+    penable x 
+    ```
+
+    and you can even enable multiple plugins in one go via the shortcut
+
+    ```bash
+    penable x y 
+    ```
+
+* Edit plugin x
+
+    ```bash
+    sudo pwnagotchi plugins edit x
+    ```
+
+   It will try to use vim by default, unless yopu add a environment variable EDITOR with nano or another one
 
 ## session-stats 
 
@@ -173,13 +257,13 @@ Scripts/Code relating to using this plugin
 
 ## wpa-sec
 
-* See all "uploaded" pcap file names to wpa-sec
+* See all "uploaded" pcap file names to wpa-sec (this is what your plugin thinks got uploaded but may not match https://wpa-sec.stanev.org/?my_nets)
 
     ```bash
     sudo cat /root/.wpa_sec_uploads
     ```
 
-* Remove those recorded files (locally only,)
+* Remove those recorded files (locally only, wpa-sec plugin will then try to re-upload all your PCAPS)
 
     ```bash
     sudo rm /root/.wpa_sec_uploads
