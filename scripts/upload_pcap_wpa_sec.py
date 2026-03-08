@@ -36,7 +36,6 @@ class WpaSecUploader:
                     print(f"File {file_path} was already submitted.")
                 else:
                     print(f"File {file_path} uploaded successfully." )
-
                 return response
 
         except FileNotFoundError:
@@ -46,7 +45,7 @@ class WpaSecUploader:
             print(f"Failed to upload file {file_path}: {e}" )
             raise
     
-def upload_pcap_files_in_directory(directory_path, api_url, api_key, whitelist_file, sleep_time=5):
+def upload_pcap_files_in_directory(directory_path, api_url, api_key, sleep_time=5):
     """
     Uploads all .pcap files in the specified directory to the WPA-SEC endpoint.
     
@@ -66,13 +65,15 @@ def upload_pcap_files_in_directory(directory_path, api_url, api_key, whitelist_f
     if not pcap_files:
         print(f"No .pcap files found in directory {directory_path}.")
         return
+        
+    cur_spot = 0
+    total = len(pcap_files)
+    print(f"Found {total} .pcap files in directory {directory_path}.")
 
-    print(f"Found {len(pcap_files)} .pcap files in directory {directory_path}.")
-    
     for pcap_file in pcap_files:
         file_path = os.path.join(directory_path, pcap_file)        
-    
-        print(f"Uploading file: {file_path}", )
+        cur_spot += 1
+        print(f"Uploading file {cur_spot}/{total} {cur_spot/total}: {file_path}")
         
         try:
             response = uploader.upload_to_wpasec(file_path)
@@ -82,13 +83,14 @@ def upload_pcap_files_in_directory(directory_path, api_url, api_key, whitelist_f
         
         print(f"Waiting for {sleep_time} seconds")
         time.sleep(sleep_time)
+        
 if __name__ == "__main__":
     # Configuration
     API_URL = "https://wpa-sec.stanev.org"
-    API_KEY = "YOUR_KEY"
-    DIRECTORY_PATH = r"C:\temp\pcaps"
-
-    WHITELIST_FILE = r"C:\temp\whitelist.txt"
-
+    API_KEY = input("Enter your wpasec API Key: ")
+    DIRECTORY_PATH = input("Enter your directory path containing PCAP files: ")
+    SLEEP_TIME = 5
+    
     # Upload all .pcap files in the directory
-    upload_pcap_files_in_directory(DIRECTORY_PATH, API_URL, API_KEY,WHITELIST_FILE, 2)
+    upload_pcap_files_in_directory(DIRECTORY_PATH, API_URL, API_KEY, SLEEP_TIME)
+
