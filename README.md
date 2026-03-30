@@ -1,5 +1,8 @@
 # Tips and tricks for pwnagotchi (pi0w, pi02w, and Jayofelony's build)
 
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/avipars)
+
+
 These files are for educational, research, and personal experimentation only. Use them responsibly with your own devices. I am not liable for any unethical or harmful use.
 
 Code snippets are [here](SNIPPETS.md)
