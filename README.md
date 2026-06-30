@@ -121,7 +121,8 @@ I recommend using these two sites for distributed handshake cracking, both have 
 
 - Huge community and has many contributers 
 
-* [pwncrack](https://pwncrack.org/l)
+* [pwncrack](https://pwncrack.org/)
 
 - Smaller community and site isn't as stable, but you can see leaderboards and more information that wpa-sec doesn't show
 
+- It's plugin repo is [here](https://github.com/Terminatoror/pwncrack-addons), look at the README for further instructions 
