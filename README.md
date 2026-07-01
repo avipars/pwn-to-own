@@ -119,10 +119,32 @@ I recommend using these two sites for distributed handshake cracking, both have 
 
 * [wpa-sec](https://wpa-sec.stanev.org/)
 
-- Huge community and has many contributers 
+    - Huge community and has many contributers. Sign up and save your API KEY!
+
+    - Plugin is [here](https://github.com/jayofelony/pwnagotchi/blob/noai/pwnagotchi/plugins/default/wpa-sec.py)
+
+    - A sample config would look like this: 
+
+    ```
+    [main.plugins.wpa-sec]
+    enabled = true
+    api_key = "your-key"
+    api_url = "https://wpa-sec.stanev.org"
+    download_results = true
+    show_pwd = false
+    single_files = false
+    ```
 
 * [pwncrack](https://pwncrack.org/)
 
-- Smaller community and site isn't as stable, but you can see leaderboards and more information that wpa-sec doesn't show
+    - Smaller community and site isn't as stable, but you can see leaderboards and more information that wpa-sec doesn't show. Sign up and save your API KEY!
 
-- It's plugin repo is [here](https://github.com/Terminatoror/pwncrack-addons), look at the README for further instructions 
+    - Plugin repo is [here](https://github.com/Terminatoror/pwncrack-addons), look at the README for further instructions 
+
+    - A sample config would look like this: 
+
+    ```
+    [main.plugins.pwncrack]
+    enabled = true
+    key = "your-key"
+    ```
